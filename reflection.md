@@ -16,7 +16,7 @@ Document at least 3 bugs you found. Add rows as needed.
 |-------|-------------------------------------|---------------------------|------------------------|
 |   None| Sidebar shows 8 attempts allowed    | Attempts left start with 7|       None             |
 | 20    | Too Low Hint shown                  | Too High hint shown       | None |
-| | | | |
+| None| New Game button starts new game | New game doesn't start until page refresh | None |
 
 ---
 
