@@ -12,9 +12,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
+| Input |           Expected Behavior         |     Actual Behavior       | Console Output / Error |
+|-------|-------------------------------------|---------------------------|------------------------|
+|       | Sidebar shows 8 attempts allowed    | Attempts left start with 7|       None             |
 | | | | |
 | | | | |
 
