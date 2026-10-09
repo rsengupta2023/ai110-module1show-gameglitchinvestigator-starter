@@ -14,8 +14,8 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input |           Expected Behavior         |     Actual Behavior       | Console Output / Error |
 |-------|-------------------------------------|---------------------------|------------------------|
-|       | Sidebar shows 8 attempts allowed    | Attempts left start with 7|       None             |
-| | | | |
+|   None| Sidebar shows 8 attempts allowed    | Attempts left start with 7|       None             |
+| 20    | Too Low Hint shown                  | Too High hint shown       | None |
 | | | | |
 
 ---
