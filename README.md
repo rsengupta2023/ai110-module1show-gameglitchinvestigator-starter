@@ -25,19 +25,31 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] The game aims to generate a random number while the user guesses the correct number within 8 attempts with hints of either higher or lower.
+- [x] I found 3 bugs:
+   - The sidebar showed 8 attempts left while the main page showed 7.
+   - The hint logic was broken where in most cases it output higher instead of lower or vice versa.
+   - The new game button failed to initiate a new game and take inputs.
+- [x] The following fixes were applied:
+   - modified the "st.session_state.attempts = 0" to "st.session_state.attempts = 1" which fixed the attempts left bug.
+   - For the hints bug, I used AI to refactor the if else logic to make sense.
+   - Reset all related session-state values, not just changing the status—because otherwise the old secret number, score, attempts, or history could remain for the new game bug.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Attempts show 8 left on both side bar and the main view.
+2. When a new game is initiated, suppose a random number 88 is generated to guess.
+3. User inputs 5
+4. Hint shows GO HIGHER!
+5. User inputs 92
+6. Hint shows GO LOWER!
+7. User inputs 88
+8. Game shows correct answer, ballons flow up, and The final score of 60 is shown.
+9. New game is clicked
+10. All outputs cleared. Attempts reset to 8, new number is generated and the game starts again.
+
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
